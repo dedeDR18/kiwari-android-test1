@@ -13,7 +13,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
-import com.belajar.mylogin2.adapter.FriendAdapter;
+import com.belajar.mylogin2.adapter.UserAdapter;
 import com.belajar.mylogin2.model.User;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseUser;
@@ -32,7 +32,7 @@ import java.util.List;
  */
 public class userFragment extends Fragment {
     private RecyclerView rvUser;
-    private FriendAdapter adapter;
+    private UserAdapter adapter;
     private List<User> mUsers;
     private FirebaseUser firebaseUser;
     private DatabaseReference reference;
@@ -77,7 +77,7 @@ public class userFragment extends Fragment {
                         mUsers.add(user);
                     }
                 }
-                adapter = new FriendAdapter(getContext(), mUsers);
+                adapter = new UserAdapter(getContext(), mUsers);
                 rvUser.setAdapter(adapter);
             }
 

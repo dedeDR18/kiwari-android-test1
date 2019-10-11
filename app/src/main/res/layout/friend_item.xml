@@ -3,26 +3,45 @@
 
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    xmlns:tools="http://schemas.android.com/tools">
-
-    <de.hdodenhof.circleimageview.CircleImageView
-        android:id="@+id/iv_friendAvatar"
-        android:layout_width="35dp"
-        android:layout_height="35dp"
-        tools:src="@drawable/ic_person_"
-        />
-
-    <TextView
-        android:layout_marginLeft="8dp"
-        android:id="@+id/tv_friendName"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.cardview.widget.CardView
+        app:cardCornerRadius="10dp"
+        app:cardElevation="4dp"
+        app:cardMaxElevation="4dp"
+        app:cardUseCompatPadding="true"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        tools:text="Ismail Bin Mail"
-        android:textStyle="bold"
-        android:textSize="20sp"
-        android:layout_toRightOf="@id/iv_friendAvatar"
-        android:layout_toEndOf="@id/iv_friendAvatar"
-        android:layout_centerVertical="true"
-        />
+        android:layout_height="70dp">
+        <LinearLayout
+            android:layout_gravity="center_vertical"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:layout_marginLeft="8dp"
+                android:id="@+id/iv_friendAvatar"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                tools:src="@drawable/ic_launcher_background"
+                />
+
+            <TextView
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="8dp"
+                android:id="@+id/tv_friendName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                tools:text="Ismail Bin Mail"
+                android:textStyle="bold"
+                android:textSize="20sp"
+
+                />
+        </LinearLayout>
+
+
+
+    </androidx.cardview.widget.CardView>
+
+
 
 </RelativeLayout>
