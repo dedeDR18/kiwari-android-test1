@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:padding="8dp">
+    <RelativeLayout
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        >
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:id="@+id/chat_item_avatar"
+            android:src="@drawable/ic_launcher_background"
+            android:visibility="gone"
+            />
+        <LinearLayout
+            android:layout_alignParentEnd="true"
+            android:orientation="vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:layout_alignParentRight="true"
+                    android:id="@+id/chat_item_message"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    tools:text="HALLLOOOOO"
+                    android:padding="8dp"
+                    android:textSize="16sp"
+                    android:background="@drawable/bg_chat_right"
+                    />
+                <TextView
+                    android:layout_alignParentRight="true"
+                    android:layout_below="@id/chat_item_message"
+                    android:layout_marginEnd="5dp"
+                    tools:text="18/12/1995 22:77:33"
+                    android:id="@+id/chat_item_date"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+            </RelativeLayout>
+
+        </LinearLayout>
+    </RelativeLayout>
+
+</RelativeLayout>

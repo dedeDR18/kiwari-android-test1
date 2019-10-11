@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "961530606095",
+    "firebase_url": "https://myloginfirebase-e8c72.firebaseio.com",
+    "project_id": "myloginfirebase-e8c72",
+    "storage_bucket": "myloginfirebase-e8c72.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:961530606095:android:7411cc68c18e080651e97a",
+        "android_client_info": {
+          "package_name": "com.belajar.mylogin2"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "961530606095-amksg9t7052r6894nq51jvan5go25jnc.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBOt0GOZQBLR8Cn730XnKM3zMRbyed1d1o"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "961530606095-amksg9t7052r6894nq51jvan5go25jnc.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
